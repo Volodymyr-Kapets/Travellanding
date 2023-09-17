@@ -1,0 +1,476 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Lora:wght@700&family=Quicksand:wght@400;500;700&family=Roboto+Slab:wght@300;400;700&display=swap");
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot") format("embedded-opentype"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+[class^=icon-], [class*=icon-] {
+  /*use !important to prevent issue with browser extensions that change fonts*/
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\e900";
+}
+
+.icon-twitter:before {
+  content: "\e901";
+}
+
+.icon-vk:before {
+  content: "\e902";
+}
+
+.icon-youtube:before {
+  content: "\e903";
+}
+
+.logo {
+  font-family: "Roboto Slab", serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+}
+.nav__item-link {
+  font-family: "Lato", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.langBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.social__item-link {
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #1ed400;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 36px 0;
+  position: relative;
+  top: 0;
+}
+.header__logo {
+  color: #fff;
+}
+.header .nav__item-link {
+  color: #fff;
+}
+.header .social__item-link {
+  color: #fff;
+}
+
+.bg-photo {
+  background: url("../img/bg.png") no-repeat;
+  background-size: cover;
+  min-width: 100%;
+  width: 100%;
+  min-height: 964px;
+  margin-top: -100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-direction: column;
+}
+
+.plane {
+  margin-top: 120px;
+}
+
+.call-to-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 48px;
+  margin-top: 100px;
+}
+.call-to-action h1 {
+  font-family: "Lora", serif;
+  font-size: 84px;
+  font-weight: 700;
+  line-height: 100px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.call-to-action span {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+}
+.call-to-action .btn {
+  padding: 21px 110px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+  background: url(../img/mountain.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 201px;
+}
+.footer__logo {
+  color: #000;
+}
+.footer .nav__item-link {
+  color: #000;
+}
+.footer .social__item-link {
+  color: #000;
+}
+
+.about__us {
+  padding: 144px 140px 124px 140px;
+}
+
+.about__us-menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about__us-text {
+  color: #333;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  max-width: 65%;
+}
+
+.about__us-title {
+  font-family: Roboto Slab;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.about_us-position {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+  margin-top: 45px;
+  margin-bottom: 120px;
+}
+.about_us-position .about_us-block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+  flex-direction: column;
+  position: relative;
+}
+.about_us-position .main-text {
+  font-family: "Roboto Slab", serif;
+  font-size: 122px;
+  font-weight: 700;
+  line-height: normal;
+  color: #1ed400;
+  position: absolute;
+  padding-bottom: 225px;
+  z-index: -1;
+}
+.about_us-position .small-text {
+  font-family: "Quicksand", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #333;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.advantage-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+}
+
+.list-text {
+  color: #1ED400;
+  font-size: 144px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.bg-barcelona {
+  background: url("../img/barcelona.png") no-repeat;
+  background-size: cover;
+  min-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0;
+  flex-direction: column;
+}
+
+.btn1 {
+  background-color: #1ed400;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18px;
+  padding: 18px 45px;
+  text-align: center;
+}
+
+.call-to-action1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-direction: column;
+  padding: 48px;
+}
+.call-to-action1 h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: normal;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.call-to-action1 h3 {
+  font-family: "Roboto Slab", serif;
+  font-size: 144px;
+  font-weight: 700;
+  line-height: 144px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.call-to-action1 .barcelona__date {
+  font-family: "Quicksand", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.call-to-action1 .barcelona__text {
+  font-family: "Quicksand", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #fff;
+  max-width: 59%;
+  text-align: center;
+}
+.call-to-action1 .hr_line {
+  border-bottom: solid 3px white;
+  width: 300px;
+}
+.call-to-action1 .barcelona__discount {
+  font-family: "Quicksand", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.ways_menu {
+  text-align: center;
+}
+.ways_menu .instagram_icon {
+  padding-top: 8px;
+}
+.ways_menu h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+.ways_menu .place-photo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+}
+.ways_menu .place-photo .text-photo {
+  position: absolute;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.85);
+  top: 10px;
+  left: 0;
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 18px;
+  padding: 5px 8px;
+}
+.ways_menu .view_more {
+  font-family: "Quicksand", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 8px;
+}
+.ways_menu .instagram_text {
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #333;
+}
+
+.bg-travel {
+  background: url("../img/fish.png");
+  background-color: rgba(30, 212, 0, 0.7);
+  mix-blend-mode: multiply;
+  height: 560px;
+  margin-top: 72px;
+}
+.bg-travel h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 48px 0 32px 0;
+}
+.bg-travel .ts-position-photo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+}
+.bg-travel .ts_photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  position: relative;
+  background: url("../img/history1.png");
+  width: 441px;
+  height: 294px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.bg-travel .ts_photo2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  position: relative;
+  background: url("../img/history2.png");
+  width: 514px;
+  height: 342px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.bg-travel .ts_photo3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  position: relative;
+  background: url("../img/history3.png");
+  width: 441px;
+  height: 294px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.bg-travel span {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  position: absolute;
+  color: #fff;
+  padding: 4px 8px;
+  background-color: rgba(0, 0, 0, 0.85);
+  top: 16px;
+  left: 16px;
+}
+.bg-travel .arrow-right {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 30px solid #fff;
+}/*# sourceMappingURL=style.css.map */

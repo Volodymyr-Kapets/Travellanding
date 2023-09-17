@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Lora:wght@700&family=Quicksand:wght@400;500;700&family=Roboto+Slab:wght@300;400;700&display=swap');
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot');
+  src:  url('../fonts/icomoon.eot') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+$white: #fff;
+$white40: rgba(255, 255, 255, 0.4);
+$grey: #333;
+$dark: #000;
+$dark85: rgba(0, 0, 0, 0.85);
+$dark50: rgba(0, 0, 0, 0.5);
+$green: #1ed400;
+$green40: rgba(30, 212, 0, 0.7);
+$cyan: #027FA5;
+$white-smoke: #D5D8DB;
+
+@mixin Roboto($fs, $fw, $lh){
+  font-family: 'Roboto Slab', serif;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+
+@mixin Lora($fs, $fw, $lh){
+  font-family: 'Lora', serif;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+
+@mixin Lato($fs, $fw, $lh){
+  font-family: 'Lato', sans-serif;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+
+@mixin Quicksand($fs, $fw, $lh){
+  font-family: 'Quicksand', sans-serif;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+
+@mixin flex($jc, $ai, $gp){
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  gap: $gp;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+[class^="icon-"], [class*="icon-"] {
+  /*use !important to prevent issue with browser extensions that change fonts*/
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\e900";
+}
+.icon-twitter:before {
+  content: "\e901";
+}
+.icon-vk:before {
+  content: "\e902";
+}
+.icon-youtube:before {
+  content: "\e903";
+}
+
+.logo{
+  @include Roboto(32px, 700, 32px)
+}
+
+.nav{
+  @include flex(center, center, 56px);
+  &__item{
+    &-link{
+      @include Lato(22px, 500, 22px);
+    }
+  }
+}
+
+.langBar{
+  @include flex(center, center, 4px);
+}
+
+.social{
+  @include flex(center, center, 32px);
+  &__item{
+    &-link{
+      font-size: 24px;
+    }
+  }
+}
+
+.btn{
+  background-color: $green;
+  color: $white;
+  text-transform: uppercase;
+  @include Lato(16px, 900, 16px)
+}
+
+.header{
+  @include flex(space-around, center, 0);
+  background: $dark85;
+  padding: 36px 0;
+  position: relative;
+  top: 0;
+  &__logo{
+    color: $white
+  }
+
+  .nav{
+    &__item{
+      &-link{
+        color: $white;
+      }
+    }
+  }
+
+  .social{
+    &__item{
+      &-link{
+        color: $white;
+      }
+    }
+  }
+}
+
+.bg-photo{
+  background: url("../img/bg.png") no-repeat;
+  background-size: cover;
+  min-width: 100%;
+  width: 100%;
+  min-height: 964px;
+  margin-top: -100px;
+  @include flex(center, center, 0);
+  flex-direction: column;
+}
+
+.plane{
+  margin-top: 120px
+}
+
+.call-to-action{
+  @include flex(center, center, 32px);
+  flex-direction: column;
+  background-color: $dark85;
+  padding: 48px;
+  margin-top: 100px;
+
+  h1{
+    @include Lora(84px, 700, 100px);
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  span{
+    @include Lato(24px, 400, 24px);
+    color: $white;
+  }
+
+  .btn{
+    padding: 21px 110px;
+  }
+}
+
+.footer{
+  @include flex(space-around, center, 0);
+    background: url(../img/mountain.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 201px;
+    &__logo{
+      color: $dark;
+    }
+
+  .nav{
+    &__item{
+      &-link{
+        color: $dark;
+      }
+    }
+  }
+
+  .social{
+    &__item{
+      &-link{
+        color: $dark;
+      }
+    }
+  }
+
+  
+}
+
+
+
+.about__us{
+  padding: (144px 140px 124px 140px);
+}
+
+.about__us-menu{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about__us-text{
+  color: #333;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  max-width: 65%;
+}
+
+.about__us-title{
+  font-family: Roboto Slab;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.about_us-position{
+  @include flex(space-around, center, 0);
+  margin-top: 45px;
+  margin-bottom: 120px;
+  .about_us-block{
+    @include flex(space-around, center, 0);
+    flex-direction: column;
+    position: relative;
+  }
+  .main-text{
+    @include Roboto(122px, 700, normal);
+    color: $green;
+    position: absolute;
+    padding-bottom: 225px;
+    z-index: -1
+  }
+
+  .small-text{
+    @include Quicksand(40px, 400, 32px);
+    color: $grey;
+    text-align: center;
+    padding-top: 20px;
+  }
+}
+
+
+
+.advantage-list{
+  @include flex(space-around, center, 0);
+}
+
+.list-text{
+  color: #1ED400;
+  font-size: 144px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.bg-barcelona{
+  background: url("../img/barcelona.png") no-repeat;
+  background-size: cover;
+  min-width: 100%;
+  width: 100%;
+  @include flex(start, center, 0);
+  flex-direction: column;
+}
+
+.btn1{
+  background-color: $green;
+  color: $white;
+  text-transform: uppercase;
+  @include Quicksand(20px, 700, 18px);
+  padding: 18px 45px;
+  text-align: center;
+}
+
+.call-to-action1{
+  @include flex(center, center, 32px);
+  flex-direction: column;
+  padding: 48px;
+
+  h2{
+    @include Roboto(56px, 700, normal);
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  h3{
+    @include Roboto(144px, 700, 144px);
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .barcelona__date{
+    @include Quicksand(24px, 500, 18px);
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .barcelona__text{
+    @include Quicksand(24px, 400, 32px);
+    color: $white;
+    max-width: 59%;
+    text-align: center;
+  }
+
+  .hr_line{
+    border-bottom: solid 3px white;
+    width: 300px;
+  }
+
+  .barcelona__discount{
+    @include Quicksand(28px, 500, 32px);
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.ways_menu{
+  text-align: center;
+  .instagram_icon{
+    padding-top: 8px;
+  }
+
+  h2{
+    @include Roboto(56px, 700, normal);
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
+
+  .place-photo{
+    position: relative;
+    @include flex(center, center, 40px);
+    text-align: center;
+  
+    .text-photo{
+      position: absolute;
+      color: $white;
+      background: $dark85;
+      top: 10px;
+      left: 0;
+      @include Roboto(18px, 300, 18px);
+      padding: 5px 8px;
+    }
+  }
+
+  .view_more{
+    @include Quicksand(24px, 500, 18px);
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 8px;
+  }
+
+  .instagram_text{
+    @include Quicksand(14px, 700, 18px);
+    color:$grey;
+  }
+}
+
+.bg-travel{
+  background: url("../img/fish.png");
+  background-color: $green40;
+  mix-blend-mode: multiply;
+  height: 560px;
+  margin-top: 72px;
+    
+  h1{
+    @include Roboto(56px, 700, normal);
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+    padding: 48px 0 32px 0;
+  }
+
+  .ts-position-photo{
+    @include flex(space-around, center, 0);
+  }
+
+  .ts_photo{
+    @include flex(center, center, 0);
+    position: relative;
+    background: url("../img/history1.png");
+    width: 441px;
+    height: 294px;
+    border: 1px solid $white40;
+  }
+
+  .ts_photo2{
+    @include flex(center, center, 0);
+    position: relative;
+    background: url("../img/history2.png");
+    width: 514px;
+    height: 342px;
+    border: 1px solid $white40;
+  }
+
+  .ts_photo3{
+    @include flex(center, center, 0);
+    position: relative;
+    background: url("../img/history3.png");
+    width: 441px;
+    height: 294px;
+    border: 1px solid $white40;
+  }
+
+  span{
+    @include Lato(14px, 500, normal);
+    position: absolute;
+    color: $white;
+    padding: 4px 8px;
+    background-color: $dark85;
+    top: 16px;
+    left: 16px;
+  }
+
+  .arrow-right {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 30px solid $white;
+  }
+}
