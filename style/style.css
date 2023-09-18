@@ -125,7 +125,7 @@
 }
 
 .plane {
-  margin-top: 120px;
+  margin-top: 72px;
 }
 
 .call-to-action {
@@ -136,7 +136,6 @@
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.85);
   padding: 48px;
-  margin-top: 100px;
 }
 .call-to-action h1 {
   font-family: "Lora", serif;
@@ -179,7 +178,7 @@
 }
 
 .about__us {
-  padding: 144px 140px 124px 140px;
+  padding: 144px 140px 80px 140px;
 }
 
 .about__us-menu {
@@ -197,7 +196,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 32px;
-  max-width: 65%;
+  max-width: 85%;
 }
 
 .about__us-title {
@@ -283,6 +282,7 @@
   line-height: 18px;
   padding: 18px 45px;
   text-align: center;
+  border: 0;
 }
 
 .call-to-action1 {
@@ -326,7 +326,7 @@
   font-weight: 400;
   line-height: 32px;
   color: #fff;
-  max-width: 59%;
+  max-width: 75%;
   text-align: center;
 }
 .call-to-action1 .hr_line {
@@ -367,7 +367,40 @@
   gap: 40px;
   text-align: center;
 }
-.ways_menu .place-photo .text-photo {
+.ways_menu .place-photo1 {
+  background: url("../img/place1.png");
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+  width: 514px;
+  height: 342px;
+}
+.ways_menu .place-photo2 {
+  background: url("../img/place2.png");
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+  width: 514px;
+  height: 342px;
+}
+.ways_menu .place-photo3 {
+  background: url("../img/place3.png");
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+  width: 514px;
+  height: 342px;
+}
+.ways_menu .text-photo {
   position: absolute;
   color: #fff;
   background: rgba(0, 0, 0, 0.85);

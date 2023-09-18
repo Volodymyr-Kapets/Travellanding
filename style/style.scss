@@ -163,7 +163,7 @@ $white-smoke: #D5D8DB;
 }
 
 .plane{
-  margin-top: 120px
+  margin-top: 72px
 }
 
 .call-to-action{
@@ -171,7 +171,6 @@ $white-smoke: #D5D8DB;
   flex-direction: column;
   background-color: $dark85;
   padding: 48px;
-  margin-top: 100px;
 
   h1{
     @include Lora(84px, 700, 100px);
@@ -222,7 +221,7 @@ $white-smoke: #D5D8DB;
 
 
 .about__us{
-  padding: (144px 140px 124px 140px);
+  padding: (144px 140px 80px 140px);
 }
 
 .about__us-menu{
@@ -240,7 +239,7 @@ $white-smoke: #D5D8DB;
   font-style: normal;
   font-weight: 500;
   line-height: 32px;
-  max-width: 65%;
+  max-width: 85%;
 }
 
 .about__us-title{
@@ -308,6 +307,7 @@ $white-smoke: #D5D8DB;
   @include Quicksand(20px, 700, 18px);
   padding: 18px 45px;
   text-align: center;
+  border: 0;
 }
 
 .call-to-action1{
@@ -339,7 +339,7 @@ $white-smoke: #D5D8DB;
   .barcelona__text{
     @include Quicksand(24px, 400, 32px);
     color: $white;
-    max-width: 59%;
+    max-width: 75%;
     text-align: center;
   }
 
@@ -374,16 +374,42 @@ $white-smoke: #D5D8DB;
     position: relative;
     @include flex(center, center, 40px);
     text-align: center;
-  
-    .text-photo{
-      position: absolute;
-      color: $white;
-      background: $dark85;
-      top: 10px;
-      left: 0;
-      @include Roboto(18px, 300, 18px);
-      padding: 5px 8px;
-    }
+  }
+
+  .place-photo1{
+    background: url("../img/place1.png");
+    position: relative;
+    @include flex(center, center, 40px);
+    text-align: center;
+    width: 514px;
+    height: 342px;
+  }
+  .place-photo2{
+    background: url("../img/place2.png");
+    position: relative;
+    @include flex(center, center, 40px);
+    text-align: center;
+    width: 514px;
+    height: 342px;
+  }
+
+  .place-photo3{
+    background: url("../img/place3.png");
+    position: relative;
+    @include flex(center, center, 40px);
+    text-align: center;
+    width: 514px;
+    height: 342px;
+  }
+
+  .text-photo{
+    position: absolute;
+    color: $white;
+    background: $dark85;
+    top: 10px;
+    left: 0;
+    @include Roboto(18px, 300, 18px);
+    padding: 5px 8px;
   }
 
   .view_more{
